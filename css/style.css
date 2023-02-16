@@ -90,10 +90,8 @@ header #toggler {
 header .fa-bars {
     font-size: 3rem;
     color: #333;
-    border-radius: .5rem;
     padding: .5rem 1.5rem;
     cursor: pointer;
-    border: .1rem solid rgba(0,0,0,.3);
     display: none;
 }
 
@@ -448,8 +446,8 @@ header .fa-bars {
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    header #toggler:checked ~ .navbar {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    #menu-bars.fa-times {
+        transform: rotate(180deg);    
     }
 
     header .navbar a {
@@ -458,6 +456,10 @@ header .fa-bars {
         background: #fff;
         border: .1rem solid rgba(0,0,0,.1);
         display: block;
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
 
