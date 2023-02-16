@@ -426,8 +426,8 @@ header .fa-bars {
         font-size: 55%;
     }
 
-    header {
-        padding: 2rem;
+    header .logo {
+        padding-left: 5rem;
     }
 }
 
